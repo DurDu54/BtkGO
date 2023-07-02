@@ -1,3 +1,3 @@
-module DurDu54
+module golesson
 
 go 1.20

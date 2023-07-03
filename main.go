@@ -4,7 +4,10 @@ import (
 	"fmt"
 	"golesson/arrays"
 	"golesson/conditionals"
+	"golesson/for_range"
+	"golesson/function"
 	"golesson/loops"
+	"golesson/maps"
 	"golesson/slices"
 	"golesson/variables"
 )
@@ -19,8 +22,11 @@ func main() {
 	Lesson4()
 	fmt.Println("****************************************************************")
 	Lesson5()
-	Lesson6()*/
+	Lesson6()
 	Lesson7()
+	Lesson8()
+	Lesson9()*/
+	Lesson10()
 }
 func Lesson1() {
 	// setup and Hello World
@@ -81,4 +87,33 @@ func Lesson6() {
 func Lesson7() {
 	//slices.Demo1()
 	slices.Demo2()
+}
+func Lesson8() {
+	// function.SelamVer()
+	// var asd = function.Topla(2, 3)
+	// fmt.Println(asd)
+
+	// sonuc1, sonuc2, sonuc3, sonuc4 := function.DortIslem(14, 3)
+	// fmt.Printf("Toplam %v, Fark %v,Carpma %v, Bolme %v ", sonuc1, sonuc2, sonuc3, float32(sonuc4))
+
+	//sonuclardan birini lamk icin sadece bir alt cizgi koymak yeterli oluyor
+	//sonuc1, sonuc2, sonuc3, _ := gibi yapinca sonuc 4 gelmez
+
+	sonuc1 := function.ToplaVariadic(3, 4, 5, 0)
+	fmt.Println("sonuc :", sonuc1)
+
+	sonuc2 := function.ToplaVariadic(3, 4, 0)
+	fmt.Println("sonuc :", sonuc2)
+
+	sonuc3 := function.ToplaVariadic(3, 5, 0)
+	fmt.Println("sonuc :", sonuc3)
+
+	sayilarArray := []int{6, 7, 8, 9}
+	fmt.Println(function.ToplaVariadic(sayilarArray...)) // bu satirdaki uc nokta gonderilen dizinin variadic ildugunu soylemekte
+}
+func Lesson9() {
+	maps.Demo1()
+}
+func Lesson10() {
+	for_range.Demo1()
 }

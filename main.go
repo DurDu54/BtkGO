@@ -3,30 +3,36 @@ package main
 import (
 	"fmt"
 	"golesson/arrays"
+	"golesson/channels"
 	"golesson/conditionals"
 	"golesson/for_range"
 	"golesson/function"
+	"golesson/interfaces"
 	"golesson/loops"
 	"golesson/maps"
+	"golesson/pointers"
 	"golesson/slices"
+	"golesson/structs"
 	"golesson/variables"
 )
 
 func main() {
-	/*Lesson1()
-	fmt.Println("****************************************************************")
-	Lesson2()
-	fmt.Println("****************************************************************")
-	Lesson3()
-	fmt.Println("****************************************************************")
-	Lesson4()
-	fmt.Println("****************************************************************")
-	Lesson5()
-	Lesson6()
-	Lesson7()
-	Lesson8()
-	Lesson9()*/
-	Lesson10()
+	/*
+		Lesson1()
+		Lesson2()
+		Lesson3()
+		Lesson4()
+		Lesson5()
+		Lesson6()
+		Lesson7()
+		Lesson8()
+		Lesson9()
+		Lesson10()
+		Lesson11()
+		Lesson12()
+		Lesson13()
+	*/
+	Lesson14()
 }
 func Lesson1() {
 	// setup and Hello World
@@ -116,4 +122,40 @@ func Lesson9() {
 }
 func Lesson10() {
 	for_range.Demo1()
+}
+func Lesson11() {
+	sayi := 20
+	pointers.Demo1(&sayi)
+	fmt.Println("maindeki sayi :", sayi)
+	fmt.Println("************************************************")
+
+	sayilar := []int{1, 2, 3}
+	pointers.Demo2(sayilar)
+	fmt.Println("maindeki sayilar :", sayilar[0])
+}
+func Lesson12() {
+	//structs.Demo1()
+
+	structs.Demo2()
+}
+func Lesson13() {
+	//async calistirma basa go yazarak yapilir
+	// go goroutines.CiftSayilar()
+	// go goroutines.TekSayilar()
+	// time.Sleep(5 * time.Second)
+
+	// channel islemi bir async method calisinca geri deger almak icin kullaniliyor ve bu islemleri async olarak ilerliyor
+	ciftSayiCn := make(chan int)
+	tekSayiCn := make(chan int)
+	go channels.CiftSayilar(ciftSayiCn)
+	go channels.TekSayilar(tekSayiCn)
+
+	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
+	//  program channellarin bitmesini bekliyor ve ondan sonra devam ediyor channellar bitince devam ediyor
+	//bu da bize async methodlardan sonra time.Sleep() kullanmadan methodun bitmesini bekliyor ve sonradan kulanilabiliyor
+	carpim := ciftSayiToplam * tekSayiToplam
+	fmt.Println(carpim)
+}
+func Lesson14() {
+	interfaces.Demo1()
 }

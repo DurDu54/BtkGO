@@ -157,5 +157,6 @@ func Lesson13() {
 	fmt.Println(carpim)
 }
 func Lesson14() {
-	interfaces.Demo1()
+	//interfaces.Demo1()
+	interfaces.Demo2()
 }

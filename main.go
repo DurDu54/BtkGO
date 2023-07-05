@@ -5,6 +5,8 @@ import (
 	"golesson/arrays"
 	"golesson/channels"
 	"golesson/conditionals"
+	"golesson/defer_statement"
+	"golesson/error_handling"
 	"golesson/for_range"
 	"golesson/function"
 	"golesson/interfaces"
@@ -31,8 +33,10 @@ func main() {
 		Lesson11()
 		Lesson12()
 		Lesson13()
+		Lesson14()
+		Lesson15()
 	*/
-	Lesson14()
+	Lesson16()
 }
 func Lesson1() {
 	// setup and Hello World
@@ -159,4 +163,11 @@ func Lesson13() {
 func Lesson14() {
 	//interfaces.Demo1()
 	interfaces.Demo2()
+}
+func Lesson15() {
+	defer_statement.Demo3()
+}
+func Lesson16() {
+	error_handling.Demo3()
+	//interfaces.Demo3()
 }

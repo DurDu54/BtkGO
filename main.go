@@ -13,7 +13,9 @@ import (
 	"golesson/loops"
 	"golesson/maps"
 	"golesson/pointers"
+	"golesson/restfull"
 	"golesson/slices"
+	"golesson/string_functions"
 	"golesson/structs"
 	"golesson/variables"
 )
@@ -35,8 +37,11 @@ func main() {
 		Lesson13()
 		Lesson14()
 		Lesson15()
+		Lesson16()
+		Lesson17()
+
 	*/
-	Lesson16()
+	Lesson18()
 }
 func Lesson1() {
 	// setup and Hello World
@@ -170,4 +175,12 @@ func Lesson15() {
 func Lesson16() {
 	error_handling.Demo3()
 	//interfaces.Demo3()
+}
+func Lesson17() {
+	// string_functions.Demo1()
+	string_functions.Demo2()
+}
+func Lesson18() {
+	//restfull.Demo1()
+	restfull.Demo2()
 }

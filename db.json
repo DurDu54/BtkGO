@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Laptop",
+      "categoryId": 1,
+      "unitPrice": 5000.99
+    },
+    {
+      "id": 2,
+      "productName": "Mouse",
+      "categoryId": 1,
+      "unitPrice": 50.99
+    },
+    {
+      "id": 3,
+      "productName": "Su",
+      "categoryId": 3,
+      "unitPrice": 1
+    },
+    {
+      "id": 4,
+      "productName": "Armut",
+      "categoryId": 2,
+      "unitPrice": 5.25
+    },
+    {
+      "id": 5,
+      "productName": "Monitor",
+      "categoryId": 1,
+      "unitPrice": 2500
+    },
+    {
+      "id": 6,
+      "productName": "Klavye",
+      "categoryId": 1,
+      "unitPrice": 1000
+    },
+    {
+      "id": 7,
+      "productName": "Mekanik Klavye",
+      "categoryId": 1,
+      "unitPrice": 1000
+    },
+    {
+      "id": 8,
+      "productName": "Mekanik Klavye",
+      "categoryId": 1,
+      "unitPrice": 1000
+    },
+    {
+      "id": 9,
+      "productName": "Mekanik Klavye",
+      "categoryId": 1,
+      "unitPrice": 1000
+    },
+    {
+      "id": 10,
+      "productName": "Mekanik Klavye",
+      "categoryId": 1,
+      "unitPrice": 1000
+    },
+    {
+      "id": 11,
+      "productName": "Mekanik Klavye",
+      "categoryId": 1,
+      "unitPrice": 1000
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Computers"
+    },
+    {
+      "id": 3,
+      "categoryName": "Beverings"
+    },
+    {
+      "id": 2,
+      "categoryName": "Fruit"
+    }
+  ]
+}
